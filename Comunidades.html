@@ -7,17 +7,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SACMR / TP DDS</title>
+    <title>SACMR - Comunidades</title>
 
     <!-- CSS FILES -->
-    <link href="css/EstilosIncidentes.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <link href="css/bootstrap-icons.css" rel="stylesheet">
+
     <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
 
   </head>
     <body>
@@ -32,7 +36,6 @@
                   <i class="bi-train-front"></i>
                   <span>SACMR</span>
                 </a>
-				  
 				  <ul class="social-icon d-flex justify-content-center align-items-center mx-auto">
                                 <span class="text-white me-4 d-none d-lg-block">Mantenete conectado</span>
 
@@ -76,13 +79,16 @@
 
           <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
             <nav>
-              <ul>
-                			<li>
+              
+                <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+                    <nav>
+					<ul>
+					<li>
 					<a href="login.html">Inicia sesión</a>
 					</li>
 						
 					<li>
-					<a href="Comunidades.html">Comunidades</a>
+					<a class="active" href="Comunidades.html">Comunidades</a>
 					</li>
 						
 					<li>
@@ -94,8 +100,8 @@
 					Incidentes
 					</a>
 					<ul class="dropdown-menu dropdown-menu-dark">
-					<li><a class="active" class="dropdown-item" href="Incidentes.html">Consulta por estado</a></li>
-					<li><a class="dropdown-item" href="#">Abrir incidente</a></li>
+					<li><a class="dropdown-item" href="Incidentes.html">Consulta por estado</a></li>
+					<li><a class="dropdown-item" href="apertura incidentes.html">Abrir incidente</a></li>
 					</ul>
 					</li>
 
@@ -107,6 +113,9 @@
 					<a href="">Administrar Usuarios</a>
 					</li>
               </ul>
+                       
+                    </nav>
+              </ul>
             </nav>
           </div>
         </div>
@@ -115,87 +124,63 @@
         <section class="hero-section d-flex justify-content-center align-items-top" id="section_1" style="padding-top: 130px">
           <div class="container">
             <div class="card text-white fs-4 mb-3" style="background-color: rgba(0, 0, 0, 0.65);border-radius: var(--border-radius-medium);">
-              <div class="card-header">INCIDENTE</div>
+              <div class="card-header">Galeria de Incidentes</div>
               <div class="card-body">
-                <p class="text-white fs-6; m-3" style="font-size: 30px">Vea toda la informacion acerca de este incidente</p>
-                <!-- ACA ADENTRO PUEDEN PONER LO QUE QUIERAN-->
-                <form action="generar_listado.java" method="post">
+                <section id="gallery">
+  <div class="container">
+    <div class="row">
 
-					
-					
-					
-					
-					
-                </form>
-          
-                <div class="d-flex flex-column">
-                  <ul class="overflow-auto p-0" style="height: 600px">
-                    <!-- ELEMENTO 1-->
-                    <li class="card m-2 p-2">
-                      <div class="row">
-                        <!--Columna servicio / entidad / fecha -->
-                        <div class="col">
-                          <h4 style="margin: 0;font-size: 20px; height: 50px"  >
-                            Servicio: Subte
-                          </h4>
-						<div class="m-3">
-                            Servicio Afectado: Ascensor de Subte Linea - B
-                        </div>
-						<div class="m-3">
-                           Descripcion: El ascensor no funciona
-                        </div>
-						<div class="m-3">
-                            Ubicacion: Palermo
-                        </div>
-						<div class="m-3">Estado: ABIERTO</div>
-                        </div>
-                        <!--Columna estado / ver / cerrar -->
-						  
-                        <div class="col-1 d-flex justify-content-start align-items-start">
-                          <div class="wrapperBotones" style="height: 400px">
-							<a href="" class="boton">Cerrar</a>
-						  </div>
-                        </div>
-					
-						  
-					 	<div class=" d-flex justify-content-start align-items-start">
-                            Fecha de apertura: 25/08/2023
-                        </div>
-						<div class=" d-flex justify-content-start align-items-start">
-                            Fecha de cierre: 09/12/2023
-                        </div>
-						 
-                      </div>
-						
-						 
-                    </li>
-                  </ul>
-					
-					
-                </div>
+      <div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+        <div class="section-title">
+        
+<div class="wrapper">
+<div class="media">
+<div class="layer">
+    <p>+ Incidente 1</p>
+  </div>
+<img src="images/gallery-img1.jpg" alt="" />
+</div>
+ <div class="media">
+<div class="layer">
+    <p>+ Incidente 2</p>
+  </div>
+<img src="images/gallery-img2.jpg" alt="" />
+</div>
+   <div class="media">
+<div class="layer">
+    <p>+ Incidente 3</p>
+  </div>
+<img src="images/gallery-img3.jpg" alt="" />
+</div>
+	
+	<div class="media">
+<div class="layer">
+    <p>+ Incidente 4</p>
+  </div>
+<img src="images/gallery-img4.jpg" alt="" />
+</div>
+</div>
+			
+</div>
+			
+        </div>
+      </div>
 
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
+
+
+
+    </div>
+  </div>
+</section>
+
               </div>
             </div>
           </div>
 
           <!-- FONDO -->
-          <div class="video-wrap">
-            <video autoplay="" loop="" muted="" class="custom-video" poster="">
-              <source src="videos/video.mp4" type="video/mp4">
-
-              Your browser does not support the video tag.
-            </video>
-          </div>
+		  
+		  
+       
         </section>
 
       </main>
