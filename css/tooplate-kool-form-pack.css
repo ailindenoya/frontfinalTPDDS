@@ -619,10 +619,17 @@ strong {
   background: #fff;
   color: #151e3f;
   transition: all 0.9s ease;
-  p {
-    transition: all 0.9s ease;
-    transform: scale(0.1);
-  }
+
+}
+
+.layer .p{
+  transition: all 0.9s ease;
+  transform: scale(0.1);
+}
+
+.layer .a{
+  transition: all 0.9ms ease;
+  transform: scale(0.1);
 }
 
 p {
@@ -635,10 +642,16 @@ p {
   opacity: 0.8;
   width: 90%;
   transition: all 0.5s ease;
-  p {
-    transform: scale(1);
-    transition: all 0.9s ease;
-  }
+}
+
+.media:hover .layer .p {
+  transform: scale(1);
+  transition: all 0.9s ease;
+}
+
+.media:hover .layer .a {
+  transform: scale(1);
+  transition: all 0.9s ease;
 }
 
 
