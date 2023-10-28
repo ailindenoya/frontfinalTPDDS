@@ -119,15 +119,7 @@
               <div class="card-body">
                 <p class="text-white fs-6; m-3" style="font-size: 30px">Vea toda la informacion acerca de este incidente</p>
                 <!-- ACA ADENTRO PUEDEN PONER LO QUE QUIERAN-->
-                <form action="generar_listado.java" method="post">
 
-					
-					
-					
-					
-					
-                </form>
-          
                 <div class="d-flex flex-column">
                   <ul class="overflow-auto p-0" style="height: 600px">
                     <!-- ELEMENTO 1-->
@@ -147,13 +139,13 @@
 						<div class="m-3">
                             Ubicacion: Palermo
                         </div>
-						<div class="m-3">Estado: ABIERTO</div>
+                            <div id="Estado" class="m-3">Estado: ABIERTO</div>
                         </div>
                         <!--Columna estado / ver / cerrar -->
 						  
                         <div class="col-1 d-flex justify-content-start align-items-start">
                           <div class="wrapperBotones" style="height: 400px">
-							<a href="" class="boton">Cerrar</a>
+							<a class="boton" onclick="cerrarDetalleIncidente()">Cerrar</a>
 						  </div>
                         </div>
 					
@@ -205,6 +197,7 @@
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/countdown.js"></script>
       <script src="js/init.js"></script>
+      <script src="js/CierreIncidente.js"></script>
 
     </body>
 </html>
